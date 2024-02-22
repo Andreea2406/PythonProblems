@@ -1,0 +1,4 @@
+#Once upon a time, there was a dragon with 6 heads. One day, a hero cut off one head, and overnight, 6 more heads grew back on the same neck! This continued for n days. On the (n+1)-th day, the hero got bored and went home! Write a program that reads from the keyboard n, the number of days, and displays on the screen how many heads the dragon had after n days.
+def pb_3328(n):
+   capete=5*n
+   print(capete)
