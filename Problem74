@@ -1,0 +1,3 @@
+#Write a function that calculates the square of a number formed with the hundreds digit and the units digit.
+def my_function(a):
+  p=(a//10)*10+a%10
