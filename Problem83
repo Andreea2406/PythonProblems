@@ -1,0 +1,7 @@
+#During vacation, Andrei and his friends wish to build as many kites as possible. They found they have N meters of string. They learned that each kite requires two M-meter pieces of string. Determine a) the maximum number of kites that can be built b) how many more meters of string would be needed to build one more kite. Write a function to read N and M and display on the first line the maximum number of kites that can be built; if no kite can be built, the first line should display 0. On the second line, display how many more meters of string would be needed to build one more kite.
+def p2876(n,m):
+    Z=n//(2*m)
+    z=n%(2*m)
+    material_inplus=(2*m)%z
+    print(Z)
+    print(material_inplus)
