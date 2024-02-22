@@ -1,0 +1,10 @@
+n = int(input())
+list = list(map(int, input("").strip().split()))[:n]
+new_list = []
+i = 0
+for i in range(len(list)):
+    new_list.append(list[i])
+    if int(list[i]) % 2 == 0:
+        new_list.append(int(list[i]) * 2)
+
+print(str(new_list).replace("[", "").replace(",", "").replace("]", ""))
