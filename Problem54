@@ -1,0 +1,4 @@
+#Calculate the sum of the 2 numbers given as parameters in the function.
+def suma_cautata(a,b):
+    suma=a+b
+    print(suma)
