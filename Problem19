@@ -1,0 +1,11 @@
+#Write a function that sorts the first k elements of the vector in ascending order and the last n-k elements of a vector with n elements read from the keyboard in descending order.
+def imparte_lista(lista, k):
+    lista1 = lista[:k]
+    lista2 = lista[k:]
+    lista1.sort()
+    lista2.sort(reverse=True)
+    lista = lista1 + lista2
+    strings = map(str, lista)
+    space = ' '
+    a_str = space.join(strings)
+    print(a_str)
