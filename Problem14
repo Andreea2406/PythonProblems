@@ -1,0 +1,14 @@
+#Write a function that determines how many elements of the vector are equal to the difference between the largest and smallest value in the vector with n elements read from the keyboard.
+def functie(n):
+    suma=0
+    termen=0
+    dif=0
+    arr = input() 
+    l = list(map(int, arr.split(' ')))
+    minim=min(l)
+    maxim=max(l)
+    dif=maxim-minim
+    for i in range(n):
+        if l[i]==dif:
+            suma+=1
+    print(suma)
