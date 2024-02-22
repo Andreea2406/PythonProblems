@@ -1,0 +1,15 @@
+#Write a program that reads several words and determines about each if it is a palindrome.
+def Palindrom(cuvant):
+    return cuvant == cuvant[:: -1]
+
+
+nr_cuvinte = int(input())
+while nr_cuvinte:
+    cuvant = input()
+    nr_cuvinte -= 1
+    if Palindrom(cuvant):
+        print(1)
+    else:
+        print(0)
+
+Palindrom(cuvant)
