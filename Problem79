@@ -1,0 +1,10 @@
+#Create a function with a parameter as a natural number n. Determine the two largest odd numbers smaller than n.
+def my_function(n):
+    if n%2==0:
+        l1=n-3
+        l2=n-1
+        print(l1,l2)
+    else:
+        l1=n-4
+        l2=n-2
+        print(l1,l2)
