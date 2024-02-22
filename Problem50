@@ -1,0 +1,6 @@
+#Grandfather's yard has a rectangular shape, and its length and width are known. Determine the area of this yard, as well as the length of the fence surrounding the yard. Write a function that receives the parameters length and width and displays the area and length.
+def curtea_bunicului(L,l):
+    aria,perimetru=0,0
+    aria=L*l
+    perimetru=2*L+2*l
+    print(aria,perimetru)
