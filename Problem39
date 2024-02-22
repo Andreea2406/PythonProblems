@@ -1,0 +1,17 @@
+#Given a string of characters that contains lowercase and uppercase letters of the English alphabet, spaces, and punctuation marks. Display each word and its frequency of appearance in the character string on a line each word-frequency pair ordered lexicographically.
+sir = input()
+
+sir_nou = ""
+contor = 0
+ok = 0
+
+sir = sir.replace(",", "")
+sir = sir.replace(".", "")
+sir = sir.split()
+sir2 = []
+for i in sir:
+    if i not in sir2:
+        sir2.append(i)
+sir2.sort()
+for i in range(0, len(sir2)):
+    print(sir2[i], sir.count(sir2[i]))
