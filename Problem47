@@ -1,0 +1,8 @@
+#Create a function that has parameters the coordinates of two different points in the plane. Determine if the line determined by the two points is horizontal, vertical, or oblique.
+def ex_0334(x1,x2,y1,y2):
+    if x1 == x2:
+        print('Verticala')
+    elif y1 == y2:
+        print('Orizontala')
+    else:
+        print('Oblica')
