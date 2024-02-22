@@ -1,0 +1,4 @@
+#Write a function with 2 known parameters, so that the third parameter is equal to the integer division resulting from the first two parameters.
+def my_function(a,b,c):
+    c=a//b
+    print(c)
