@@ -1,0 +1,20 @@
+#Two friends are on the Ox axis, at integer coordinates. The first is at point x1 = a, and the second is at point x2 = b. Each can move one position left or right an unlimited number of times. When moving, fatigue changes according to the following rule: the first move increases fatigue by 1, the second move by 2, the third by 3, and so on. The friends want to meet at a point with an integer coordinate. Determine the minimum total fatigue the two will accumulate. Create a function that receives parameters a and b.
+def ex_2419(a,b):
+   if a > b:
+       dif= a-b
+   else:
+       dif=b-a
+   mij=dif//2
+   if (mij%2==0):
+       s1=(mij/2)*(1+mij)
+   else:
+       s1=mij*((1+mij)/2)
+   if dif %2==0:
+       s=2*s1
+   else:
+       if (mij+1)%2==0:
+           s2=((mij+1)/2)*(2+mij)
+       else:
+           s2=((2+mij)/2)*(mij+1)
+           s=s1+s2
+   print(s)
