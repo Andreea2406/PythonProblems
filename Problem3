@@ -1,0 +1,5 @@
+#Write a program that reads the natural number n and determines the sum of the first n nonzero perfect squares.
+def func(n):
+s = 0
+s = (n*(n+1)*(2*n+1))//6
+print(s)
