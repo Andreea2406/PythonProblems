@@ -1,0 +1,9 @@
+#Write a program that reads a sentence and determines the number of words in the sentence that start and end with a vowel.
+n=input().split()
+contor=0
+vocale='AEIOUaeiou'
+for cuvant in n:
+   if cuvant[0] in vocale:
+      if cuvant[-1] in vocale:
+         contor+=1
+print(contor)
