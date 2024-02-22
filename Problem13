@@ -1,0 +1,9 @@
+#In a sequence of natural numbers, an element is called a peak if it has two neighbors and is strictly greater than them. Given a sequence with n elements, natural numbers, calculate the sum of the elements in the sequence that are peaks.
+def func(lista):
+    suma=0
+    n=len(lista)
+    i=1
+    for i in range(1,n-1,1):
+        if lista[i]>lista[i-1] and lista[i]>lista[i+1]:
+            suma+=lista[i]
+    print(suma)
