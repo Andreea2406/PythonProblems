@@ -1,0 +1,22 @@
+#Write a program that manages a queue of integers. Initially, the queue is empty. The program will read from the keyboard a list of operations, which can be "push X" – adds the integer value X to the queue, "pop" – removes the element from the queue; "front" – displays the element at the beginning of the queue. The program will perform the read operations on the queue in order. Displays are made on the screen, one value per line.
+from collections import deque
+n=int(input())
+
+def coada():
+    s=[]
+    s=list(s)
+    aux=deque()
+    afisare=deque()
+    for i in range(n):
+        op=input('se da operatia: ').split
+        x=input().split()
+        if op=="push":
+            s.append((int(x)))
+        elif op=="pop":
+            s.popleft()
+        
+
+
+    print(s)
+
+coada()
