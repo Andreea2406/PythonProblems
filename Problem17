@@ -1,0 +1,5 @@
+#Write a program named cub which receives as a parameter a positive real number and displays the total area and volume of a cube, these being separated by a space.
+def cub(x):
+    volum=x**3
+    arie=6*(x**2)
+    print(arie,volum)
