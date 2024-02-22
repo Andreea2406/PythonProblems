@@ -1,0 +1,5 @@
+#Given two natural numbers as parameters x and y, calculate the last digit of their sum.
+def ultima_cifra(c,n):
+
+    s=c+n
+    print('Ultima cifra a sumei este',s%10)
