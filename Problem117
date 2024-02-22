@@ -1,0 +1,19 @@
+def ThreeOddDigitsInARow(n):
+    k = 0
+    uc = n % 10
+    ok = 0
+    while n:
+        if k >= 3:
+            ok = 1
+        elif uc % 2 == 1:
+            k += 1
+        else:
+            k = 0
+        n //= 10
+        uc = n % 10
+
+        if ok > 0:
+            print("1")
+            break
+    else:
+        print("0")
