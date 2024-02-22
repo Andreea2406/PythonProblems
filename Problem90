@@ -1,0 +1,10 @@
+#Given a natural number n with exactly three distinct digits as a parameter, calculate the sum of all numbers that can be obtained by permuting its digits.
+
+def numere(n):
+    c=n%10
+    n//=10
+    b=n%10
+    n//=10
+    a=n
+    suma = a * 100 + b * 10 + c + a * 100 + c * 10 + b + c * 100 + a * 10 + b + c * 100 + b * 10 + a + b * 100 + a * 10 + c + b * 100 + c * 10 + a
+    print(suma)
