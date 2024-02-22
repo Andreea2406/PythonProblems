@@ -1,0 +1,9 @@
+def vowels_only(sentence):
+    sentence = sentence.split()
+    for word in sentence:
+        ok = 1
+        for letter in word:
+            if letter not in ["a", "e", "i", "o", "u"]:
+                ok = 0
+        if ok == 1:
+            print(word)
