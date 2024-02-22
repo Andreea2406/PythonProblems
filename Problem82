@@ -1,0 +1,16 @@
+#Given a natural number as a function parameter, determine the largest digit appearing in its notation and the number of its occurrences.
+def pb_121(n):
+    maxim=-1
+    poz=0
+    copie=n
+    while n!=0:
+        cif=n%10
+
+        if cif>maxim:
+            maxim=cif
+        n//=10
+    while copie>0:
+        if copie%10==maxim:
+            poz+=1
+        copie//=10
+    print(maxim,poz)
