@@ -1,0 +1,12 @@
+def bird_language_translation(s):
+    
+    vowels = "aeiou"
+    i = 0
+    while i < len(s):
+        if s[i] in vowels:
+            aux = s[:i] + s[i + 2:]
+            i += 2
+            s = aux
+        else:
+            i += 1
+    print(s)
