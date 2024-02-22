@@ -1,0 +1,31 @@
+#Write a program that reads a word and displays it after swapping the first vowel with the last consonant.
+cuvant=str(input())
+
+def Vocale(cuvant):
+    vocale=["a","e","i","o","u"]
+   
+    pozitie_cosoane,pozitie_vocale=0,0
+    for i in range (len(cuvant)):
+            if cuvant[i] in vocale:
+                pozitie_vocale=i
+                break
+    for i in range(len(cuvant)-1,0,-1):
+
+            if cuvant[i] not in vocale:
+                pozitie_cosoane=i
+                break
+
+    if pozitie_cosoane==0:
+        print('NU SE POATE')
+    else :
+        cons=cuvant[pozitie_cosoane]
+        voc=cuvant[pozitie_vocale]
+        cuvant=cuvant.replace(cuvant[pozitie_cosoane],voc,1)
+        cuvant=cuvant.replace(cuvant[pozitie_vocale],cons,1)
+
+        print(cuvant)
+
+
+
+
+Vocale(cuvant)
