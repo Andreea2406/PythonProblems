@@ -1,0 +1,5 @@
+#Given a natural number n with exactly three distinct digits. Calculate the product of the units digit and the hundreds digit.
+def numar(a):
+    uc=a%10
+    p=(a//100)*uc
+    print(p)
