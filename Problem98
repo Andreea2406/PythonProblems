@@ -1,0 +1,5 @@
+#In a class, there are F girls and B boys. Each girl reads 3 pages a day, and each boy reads 2 pages a day. How many pages will the children read in n days? The program will display on the screen the total number of pages read.
+def pb_3178(F,B,n):
+    fata=F*3*n
+    baiat=B*2*n
+    print(fata+baiat)
