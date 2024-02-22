@@ -1,0 +1,20 @@
+#Given four natural numbers n a x y. Display the elements of the set M, with the following properties: the elements of M are natural numbers less than or equal to n; a is in M; if b is in M, then b+x and b+y are in M.
+n=int(input('Se da N'))
+a=int(input('Se da A'))
+x=int(input('Se da X'))
+y=int(input('Se da Y'))
+M=[]
+M.append(a)
+M.append(a+x)
+M.append(M[1]+x)
+m=n
+sumax=a+2*x
+sumay=M[1]+x
+while m>0 and sumax+x<=25:
+    M.append(sumax+x-1)
+    M.append(sumax+x)
+    x+=4
+    m-=1
+M.append(n)
+for i in M:
+    print(i,end=' ')
