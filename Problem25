@@ -1,0 +1,12 @@
+#Write a program that will replace with the digit 5 the last letter of each word of a given text. The text will consist of a maximum of 200 characters, the last being ".".
+def functie(sir):
+    sir_nou = ""
+
+
+for i in range(len(sir)):
+    if i != len(sir) - 1:
+        if sir[i + 1] == '.' or sir[i + 1] == ' ' and sir[i] != " ":
+            sir_nou += "5"
+        else:
+            sir_nou += sir[i]
+print(sir_nou)
