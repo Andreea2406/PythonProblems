@@ -1,0 +1,5 @@
+#Write a program that calculates the total area and volume of a cube for which the side length is given as a parameter.
+def geometrie(L):
+    S = 6 * L * L
+    V = L * L * L
+    print('Aria cubului este:',S ,',iar volumul cubului este: ',V,'.')
