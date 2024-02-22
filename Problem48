@@ -1,0 +1,6 @@
+#In a yard, there are G chickens and O sheep. Create a function to determine the number of legs and heads for the given number of chickens and sheep.
+def pb_175(g,o):
+    p=2*g+4*o
+    c=g+o
+   
+    print(c,p)
