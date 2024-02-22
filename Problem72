@@ -1,0 +1,4 @@
+#Write a function for which two parameters are known, so that the third parameter represents the value that must be added to the first parameter to obtain three times the second.
+def my_function(a,b,c):
+    c=b*3-a
+    print(c)
