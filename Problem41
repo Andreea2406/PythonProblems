@@ -1,0 +1,11 @@
+#Given a sequence with n elements, integers, and a number p. Write a function to delete from the sequence X the element located at position p.
+def functie(n,p):
+    lista = list(map(int, input().strip().split()))[:n]
+
+    for i in range(1,n,1):
+        if i==p:
+            lista.remove(lista[p-1])
+
+
+
+    print (', '.join(map(str, lista)).replace(',',''))
