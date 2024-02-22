@@ -1,0 +1,14 @@
+def is_palindrome(word):
+    return word.lower() == word[::-1].lower()
+
+sentence = input()
+sentence_list = sentence.split(' ')
+position = 0
+max_length = 0
+for i in range(len(sentence_list)):
+    if is_palindrome(sentence_list[i]):
+        variable_length = len(sentence_list[i])
+        if max_length < variable_length:
+            max_length = variable_length
+            position = i
+print(sentence_list[position])
