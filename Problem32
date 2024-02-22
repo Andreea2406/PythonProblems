@@ -1,0 +1,11 @@
+#Read from the keyboard a string of characters. Display the string obtained by replacing each vowel with the corresponding uppercase letter.
+sir = input()
+sir_nou=""
+vocale=["a","e","i","o","u"]
+for i in range(len(sir)):
+    if sir[i] in vocale:
+        sir_nou+=sir[i].upper()
+    else:
+        sir_nou+=sir[i]
+
+print(sir_nou)
