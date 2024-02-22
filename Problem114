@@ -1,0 +1,2 @@
+def replace_word(word1, word2, sentence):
+    print(sentence.replace(word1, word2))
