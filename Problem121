@@ -1,0 +1,10 @@
+def is_prime(n):
+    if n == 1:
+        print('0')
+    else:
+        ok = 0
+        for d in range(2, int(n**0.5) + 1):
+            if n % d == 0:
+                ok = 1
+                break
+        print("1" if ok == 0 else "0")
