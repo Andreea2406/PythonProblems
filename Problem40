@@ -1,0 +1,6 @@
+#Given a natural number n. Determine its parity. If the number is even, display "even", otherwise display "odd".
+n=int(input())
+if n%2==0:
+    print('par')
+else:
+    print('impar')
