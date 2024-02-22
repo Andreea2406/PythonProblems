@@ -1,0 +1,22 @@
+#A word is a palindrome if it reads the same in both directions. For example, "racecar" is a palindrome. A sentence is palindromic if, by eliminating spaces and other punctuation marks, it becomes a palindrome. For example, "A man, a plan, a canal, Panama" is palindromic. Write a program that reads several sentences and determines about each if it is palindromic.
+def palindrom(props):
+    for prop in props:
+        nprop = prop.replace(" ", "") \
+            .replace(".", "") \
+            .replace(",", "") \
+            .replace("!", "") \
+            .replace("?", "") \
+            .replace("-", "")
+        print(int(nprop == nprop[::-1]))
+
+
+if __name__ == '__main__':
+    n = int(input("n: "))
+    if 0 < n <= 100:
+        props = []
+        for i in range(n):
+            inp = input()
+            if len(inp) <= 200:
+                props.append(inp)
+        if len(props) == n:
+            palindrom(props)
