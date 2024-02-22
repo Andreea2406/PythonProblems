@@ -1,0 +1,5 @@
+#Write a function labeled elim_cif which receives as a parameter a number of exactly 3 digits, which displays the number with the property that the middle digit is eliminated.
+def elim_cif(x):
+    aux=x%10
+    x=(x//100)*10+(aux)
+    print(x)
