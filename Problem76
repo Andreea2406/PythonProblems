@@ -1,0 +1,11 @@
+#Given 3 natural numbers h m x (function parameters), representing the current time expressed in hours (h) and minutes (m). Display what time it will be in x minutes.
+def minute(h,m,x):
+    if x+m>=60:
+        h+=1
+        m=m+x-60
+
+    else:
+        m=m+x
+    if h==24:
+        h=0
+    print(h,m)
