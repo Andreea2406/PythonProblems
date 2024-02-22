@@ -1,0 +1,14 @@
+#Given a natural number n and a base b as parameters, determine the largest digit of n's representation in base b.
+def bazab(n,b):
+    a=1
+    x=0
+    maxim=0
+    while n!=0:
+        x+=(n%b)*a
+        n//=b
+        a*=10
+    while x!=0:
+        if x%10>maxim:
+            maxim=x%10
+        x//=10
+    print(maxim)
