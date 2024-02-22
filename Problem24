@@ -1,0 +1,7 @@
+#Write a function named Cosmin_Sabo that receives as a parameter a natural number with exactly three digits and returns the sum of its digits.
+def Cosmin_Sabo(numar):
+    suma=0
+    while numar!=0:
+        suma=suma+numar%10
+        numar=numar//10
+    return(suma)
