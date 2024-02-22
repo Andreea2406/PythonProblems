@@ -1,0 +1,8 @@
+#Write a function that has two natural numbers as parameters and displays all their common divisors, in ascending order, on the same line, separated by a space.
+def my_function(a,b):
+    factori = []
+    div = 1
+    while div <=min(a,b)/2:
+        if a % div == 0 and b % div == 0:
+            print(div, end=" ")
+        div += 1
