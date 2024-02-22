@@ -1,0 +1,6 @@
+#In a yard, there are G chickens and O sheep. Create a function labeled curte that displays the sum of the number of legs and the number of heads in the yard.
+def curte(g,o):
+    p=2*g+4*o
+    c=g+o
+    suma=p+c
+    print(suma)
