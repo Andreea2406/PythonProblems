@@ -1,0 +1,10 @@
+#Write a function that reads the natural number n and determines the sum S=1+12+123+...+12*...*n.
+def functie(n):
+    i = 1
+    s = 0
+
+    termen = 1
+    for i in range(1,n +1):
+        termen = termen * i
+        s = s + termen
+    print(s)
