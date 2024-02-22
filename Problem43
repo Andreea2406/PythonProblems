@@ -1,0 +1,20 @@
+#Read a string of characters representing a sentence that contains uppercase and lowercase letters of the English alphabet, spaces, digits, and other symbols. In the following, we consider a word any sequence delimited by spaces that contains at least one letter. Display the read string so that the words of maximum length are replaced with their reverse (mirror image), the rest of the words and their arrangement in the sentence to remain unchanged.
+text = input().split(' ')
+cuvantMax = -1
+k = 0
+output = ""
+
+for cuvinte in text:
+    if any(i.isalpha() for i in cuvinte) == True:
+        if len(cuvinte) > cuvantMax:
+            cuvantMax = len(cuvinte)
+for cuvinte in text:
+    if any(i.isalpha() for i in cuvinte):
+        if len(cuvinte) == cuvantMax:
+            output += cuvinte[::-1]
+        else:
+            output += cuvinte
+    else:
+        output += cuvinte
+    output += ' '
+print(output[:len(output) - 1])
