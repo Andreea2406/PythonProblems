@@ -1,0 +1,9 @@
+#Consider a text with at most 100 characters, in which the words are formed only from uppercase and lowercase letters of the English alphabet and are separated by exactly one space. The text represents the name of an institution or organization. Write a program that reads from the keyboard a text of the specified type and constructs in memory, then displays on the screen, a character string that represents the corresponding acronym of the read name. The acronym is formed from the first character of each word of the name that begins with a capital letter.
+nume=input()
+
+nume_nou=nume.split(' ')
+acronim=[]
+for i in range(len(nume_nou)):
+    if 'A'<=nume_nou[i][0]<='Z':
+        acronim.append((nume_nou[i][0]))
+print("".join(acronim))
