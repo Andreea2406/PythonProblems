@@ -1,0 +1,8 @@
+#Read a sequence with n elements, integers. Write a function to delete the elements that are repeated, keeping only the first one from left to right.
+def functie(n):
+   sir=[int(n) for n in input().split(' ')]
+   sir_nou=[]
+   for n in sir:
+      if n not in sir_nou:
+         sir_nou.append(n)
+   print(*sir_nou)
