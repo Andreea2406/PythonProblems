@@ -1,0 +1,12 @@
+#Write a function that has a parameter and makes the decomposition of this number into prime factors, writing each factor as many times as it appears, in ascending order.
+def my_function(n):
+    factori = []
+    div = 2
+    while div <=n:
+        if n % div == 0:
+            factori.append(div)
+            n = n // div
+
+        else:
+            div += 1
+    print(factori)
