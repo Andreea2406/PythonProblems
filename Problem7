@@ -1,0 +1,10 @@
+#Define a function that receives a list of integers and determines how many pairs of consecutive elements end with the same digit.
+def func(lista):
+    contor=0
+    n=len(lista)
+    for i in range (n-1):
+        nr1,nr2=int(lista[i]),int(lista[i+1])
+        if nr1%10==nr2%10:
+            contor+=1
+
+    print(contor)
