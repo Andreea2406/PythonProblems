@@ -1,0 +1,17 @@
+#Write a function named my_function that takes as input a natural number with at least two digits and returns the sum of the tens digit and the units digit of the number read.
+def my_function(n):
+    suma = 0
+    k = 0
+    copie=n
+    while copie != 0:
+        k = k + 1
+        copie //= 10
+
+    if k==2:
+            suma=n%10+n//10
+            print(suma)
+    else:
+            cz=(n%10**(k-1))//(10**(k-2))
+            suma=n%10+cz
+           
+            print(suma)
