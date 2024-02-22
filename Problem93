@@ -1,0 +1,12 @@
+#Given a natural number n as a parameter, determine the sum of its divisors.
+def ex376(n):
+    d=1
+    suma=0
+    while d*d<=n:
+        if n%d==0:
+            if n//d==d:
+                suma==d
+            else:
+                suma+=d+(n//d)
+        d+=1
+    print(suma)
