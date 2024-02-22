@@ -1,0 +1,7 @@
+#Given two natural numbers as parameters, display their sum, difference, product, and quotient, in that order, separated by a space.
+def asii(n,m):
+    s=n+m
+    d=n-m
+    p=n*m
+    c=n//m
+    print(s,d,p,c)
