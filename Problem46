@@ -1,0 +1,6 @@
+#On a farm, there are chickens and sheep. The number of heads and the number of legs in the yard are known. Determine the number of chickens and the number of sheep for a given number of heads and legs.
+def total_animale(c,p):
+    o,g=0,0
+    o=(p-(2*c))//2
+    g=c-o
+    print(g,o)
