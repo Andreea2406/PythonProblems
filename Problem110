@@ -1,0 +1,8 @@
+n = int(input())
+list = list(map(int, input("").strip().split()))[:n]
+new_list = []
+i = 0
+for i in range(len(list)):
+    if list[i] not in new_list:
+        new_list.append(list[i])
+print(str(new_list).replace("[", "").replace(",", "").replace("]", ""))
