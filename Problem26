@@ -1,0 +1,7 @@
+#Grandfather's yard has a rectangular shape, and its length and width are known. Create a function labeled bunicul that has 2 parameters representing the length and width of the yard and displays the area of this yard, as well as the length of the fence surrounding the yard (these will be separated by a new line).
+def bunicul(L,l):
+    aria,perimetru=0,0
+    aria=L*l
+    perimetru=2*L+2*l
+    print(aria)
+    print(perimetru)
