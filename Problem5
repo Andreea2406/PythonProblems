@@ -1,0 +1,5 @@
+#Write a function to calculate the difference between the largest and smallest of the 3 numbers read from the keyboard.
+def dif_max_min(*args):
+    maxim=max(*args)
+    minim=min(*args)
+    print(maxim-minim)
