@@ -1,0 +1,4 @@
+def longest_sentence(n):
+    sentences = [input() for _ in range(n)]
+    longest = max(sentences, key=len)
+    print(longest)
