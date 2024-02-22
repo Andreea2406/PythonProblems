@@ -1,0 +1,15 @@
+#Write a function that checks if the vector with n elements read from the keyboard has a majority element. We call a majority element a value for which the number of appearances in the vector is greater than n/2.
+def functie(numar):
+    lista = list(map(int, input().strip().split()))[:numar]
+    nr=0
+    contor=0
+    for i in lista:
+        aparitii=lista.count(i)
+
+        if aparitii>numar//2:
+            contor+=1
+            nr=i
+    if contor>0:
+        print('DA', nr)
+    else:
+        print('NU')
