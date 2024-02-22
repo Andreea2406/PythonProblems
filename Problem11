@@ -1,0 +1,6 @@
+#Create a function that receives a list with n natural numbers. Calculate the sum between the largest and smallest number in the list.
+def func(lista):
+    maxim=max(lista)
+    minim=min(lista)
+    suma=maxim+minim
+    print(suma)
