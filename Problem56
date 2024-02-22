@@ -1,0 +1,8 @@
+#A snail moves at a speed of v km/h. It has to cover a distance of d meters. Determine in how many minutes the snail will cover this distance. Calculate the speed and distance in parameters.
+def pb_3060(v, d):
+   v = v * (1000/60)
+   T = 1.0 * d/v
+   t = int(T)
+   if T > t:
+       t += 1
+   print(t)
