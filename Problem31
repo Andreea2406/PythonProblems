@@ -1,0 +1,10 @@
+#Given a string of characters representing a sentence formed from lowercase letters of the English alphabet and spaces. Transform the given string so that the first and last letter of each word are replaced with the corresponding uppercase letter.
+cuvant = input()
+
+sir = ""
+for i in range(0, len(cuvant) ):
+    if i == 0 or i == len(cuvant)-1 or cuvant[i + 1] == " " or cuvant[i - 1] == ' ':
+        sir+=cuvant[i].upper()
+    else:
+        sir+=cuvant[i]
+print(sir)
