@@ -1,0 +1,13 @@
+#Write a function that receives a natural number as a parameter and displays the product of its odd digits. If the number does not contain any odd number, then display "-1".
+def my_function(n):
+    p=1
+    ok=0
+    while n!=0:
+        if (n%10)%2==1:
+            p=p*(n%10)
+            ok=1
+        n//=10
+    if ok==1:
+        print(p)
+    else:
+        print(-1)
