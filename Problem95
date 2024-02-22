@@ -1,0 +1,9 @@
+#For a given natural number, calculate the control digit as follows: calculate the sum of its digits, for the result calculate the sum of its digits again, continue until the sum becomes a single-digit number, which is the control digit of the initial number.
+def control(n):
+    suma=0
+    while n!=0:
+        suma += n % 10
+        n //= 10
+    while suma >= 10:
+        suma = (suma // 10) + (suma % 10)
+    print(suma)
