@@ -1,0 +1,4 @@
+#It is known that n cats eat n mice in n minutes. Determine how long m cats will eat m mice. The program will display on the screen the time required for m cats to eat m mice.
+def functie(n,m):
+    timp=n
+    print(timp)
