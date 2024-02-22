@@ -1,0 +1,8 @@
+#Write a function that receives an integer as a parameter and determines its sign.
+def semn(n):
+   if n>0:
+      print('Pozitiv')
+   elif n==0:
+      print("Nul")
+   else:
+      print('Negativ')
