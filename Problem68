@@ -1,0 +1,7 @@
+#Write a function that has a natural number as a parameter and displays the sum of its digits.
+def my_function(n):
+    suma=0
+    while n:
+        suma=suma+n%10
+        n//=10
+    print(suma)
