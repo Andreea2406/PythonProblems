@@ -1,0 +1,5 @@
+#If the students of a class sit n in a bench, e students will stand up, and if they sit m in a bench, b benches will be unoccupied. What is the number of students and benches in the class, respectively? The program will display on the first line the number of students and on the next line the number of benches in the class.
+def pb_2671(n,m,e,b):
+   nrtot_b=((b*m)+e)//(m-n)
+   nrtot_e=n*nrtot_b+e
+   print(nrtot_b,nrtot_e)
