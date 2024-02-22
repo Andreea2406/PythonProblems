@@ -1,0 +1,9 @@
+#Write a function that reads the natural number n and determines the value of n!.
+def func(nr):
+    fact=1
+    if nr>1:
+        for i in range(2,nr+1):
+            fact*=i
+    else:
+        return 1
+    print(fact)
