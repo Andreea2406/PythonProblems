@@ -1,0 +1,14 @@
+#Write a function that receives a natural number as a parameter and determines the factor that appears in the decomposition into prime factors of the number at the highest power.
+def my_function(n):
+    p_max=-1
+    d=2
+    while n>1:
+        p=0
+        while n%d==0:
+            p+=1
+            n//=d
+        if p>0 and p>=p_max:
+            p_max=p
+            factor=d
+        d+=1
+    print(factor)
