@@ -1,0 +1,5 @@
+#Create a function with a parameter as a number N with exactly three digits and determine the number obtained by removing the middle digit.
+def eliminare_cifra(a):
+    uc=a%10
+    p=((a//100)%10)*10+uc
+    print(p)
