@@ -1,0 +1,6 @@
+#On planet Mars, money is different from ours. There are three types of coins: the first type of coin is worth a Martian lei, the second type is worth b Martian lei, and the third type of coin is worth c Martian lei. Martian Iggle has n coins of the first type, m coins of the second type, and p coins of the third type. How many Martian lei does Iggle have?
+def pb_3180(a,b,c,m,n,p):
+    m1=a*m
+    m2=b*n
+    m3=c*p
+    print("Martianul Iggle va avea", m1 + m2 + m3, "lei martieni")
