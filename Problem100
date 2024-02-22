@@ -1,0 +1,4 @@
+#Given two natural numbers, calculate their difference.
+def scadere2(n,m):
+    d=n-m
+    print(d)
