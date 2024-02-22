@@ -1,0 +1,21 @@
+#Read a string formed from at most 255 characters, lowercase letters of the English alphabet. Determine the longest sequence in the string formed only from consonants.
+sir = input()
+
+sir_nou = ""
+vocale = ["a", "e", "i", "o", "u"]
+contor = 0
+max = -1
+for litera in sir:
+    if litera not in vocale:
+        sir_nou += litera
+        contor += 1
+    if litera in vocale:
+        if contor > max:
+            max = contor
+            sir_final = sir_nou
+            contor = 0
+            sir_nou = ""
+    if litera not in vocale:
+        if contor >= max:
+            sir_final = sir_nou
+print(sir_final)
