@@ -1,0 +1,20 @@
+#Write a program that reads a text and inserts after each vowel the character *.
+cuvant=input()
+
+def Vocale(cuvant):
+    vocale=["a","e","i","o","u"]
+    cuvant=list(cuvant)
+    c=0
+    for i in range(len(cuvant)):
+        if cuvant[i] in vocale:
+            c=c+1
+    for i in range (len(cuvant)+c):
+        if cuvant[i] in vocale:
+            cuvant.insert(i+1,"*")
+    cuvant="".join(cuvant)
+    print(cuvant)
+
+
+
+
+Vocale(cuvant)
