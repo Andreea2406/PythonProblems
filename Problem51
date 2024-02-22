@@ -1,0 +1,6 @@
+#Andrei is very disorganized and sometimes slips in a lie. To make him responsible, his mother put him in charge of the theater tickets. When she asks him where he put the tickets, Andrei says that between the pages numbered x and y of the computer science manual. Verify if Andrei's answer can be correct – if he can place the tickets between the pages numbered x and y of the computer science manual. Create a function with parameters x and y to find out if Andrei is lying or not.
+def minciuna(x,y):
+    if x+1==y and x%2==0 or y+1==x and y%2==0:
+        print('Andrei e mai responsabil')
+    else:
+        print('Andrei minte')
