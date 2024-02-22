@@ -1,0 +1,12 @@
+# Display Lowercase Letters in a String
+# Write a program that reads a character string and displays each lowercase letter in the string just once, in the order they appear in the string.
+def lower_letters(s):
+    list = []
+    final_list = []
+    for i in range(len(s)):
+        if s[i].islower():
+            list.append(s[i])
+    for j in list:
+        if j not in final_list:
+            final_list.append(j)
+    print(final_list)
