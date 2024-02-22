@@ -1,0 +1,17 @@
+#Write a function that displays the elements between the element with the minimum value and the one with the maximum value in a vector with n elements read from the keyboard (including the minimum and maximum value).
+def functie(numar):
+    lista = list(map(int, input().strip().split()))[:numar]
+
+    contor = 0
+    n = len(lista)
+    maxim = max(lista)
+    minim = min(lista)
+    l1,l2=0,0
+    for i in range(n):
+        if lista[i] == maxim:
+            l1 = i
+        if lista[i] == minim:
+            l2 = i
+    for i in range(n):
+        if i>=l2 and i<=l1 or i<=l2 and i>=l1:
+            print(lista[i],end=' ')
