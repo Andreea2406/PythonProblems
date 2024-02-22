@@ -1,0 +1,9 @@
+def double_first(s):
+    s = str(s)
+
+    for i in range(0, len(s) + 1):
+        if i == 0:
+            aux = s[:i] + s[i] + s[i:]
+            s = aux
+
+    print(s)
