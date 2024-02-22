@@ -1,0 +1,4 @@
+#In a beehive, on an infinite honeycomb, lives a very hardworking bee. The honeycomb is made up of hexagonal cells, each cell having six neighbors. On the first day, the bee deposits nectar in a single cell. Each subsequent day, the bee deposits nectar in cells adjacent to those where nectar has already been deposited. Program how many cells have nectar after n days. The program will display on screen the number of cells in which nectar is deposited after n days.
+def pb_2938(n):
+    c=1+3*n*(n-1)
+    print(c)
