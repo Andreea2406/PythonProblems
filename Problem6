@@ -1,0 +1,7 @@
+#Write a program that reads the natural number n from the keyboard and determines the sum S=2+4+..+(2n). The sum will be displayed.
+def ex_46(nr):
+    s=0
+    for i in range(nr+1):
+        s=s+2*i
+
+    print(s)
