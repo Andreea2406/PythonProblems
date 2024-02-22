@@ -1,0 +1,9 @@
+#Write a function that calculates the index imin and the index imax of the element with the minimum value, respectively with the maximum value from the vector with n elements read from the keyboard.
+def functie(n):
+    sir = [int(nr) for nr in input().split()]
+    lista = []
+    pozitie_min = sir.index(min(sir))
+    pozitie_max = sir.index(max(sir))
+    lista.append(pozitie_min + 1)
+    lista.append(pozitie_max + 1)
+    print (', '.join(map(str, lista)).replace(',',''))
