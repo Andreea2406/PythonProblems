@@ -1,0 +1,11 @@
+#Given a string of characters that contains letters, digits, punctuation marks, spaces, and other ASCII symbols. The digits in the string form numbers, written in base 10. Determine the sum of these numbers. The program reads from the keyboard the given string and displays on the screen the calculated sum.
+def suma():
+   suma = 0
+   x = (s[i:i+1] for i in range(0, len(s), 1))
+   l = [int(''.join(j)) for is_digit, j in groupby(s, str.isdigit) if is_digit]
+   for k in range(len(l)):
+       suma += l[k]
+   print(suma)
+if __name__ == "__main__":
+   s = input()
+   suma()
