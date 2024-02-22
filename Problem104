@@ -1,0 +1,13 @@
+
+def paving(a, b):
+   a = int(a)
+   b = int(b)
+   x = a   
+   y = b
+   while b != 0:   
+       r = a % b  
+       a = b 
+       b = r  
+   l = a  
+   c = (x // a) * (y // a)  
+   print(c, l)  
