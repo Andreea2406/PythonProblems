@@ -1,0 +1,8 @@
+#Write a function that determines the maximum difference in the sequence. Read from the keyboard the number n, then the sequence of n integers, separated by spaces, and display on the screen a single integer representing the maximum difference.
+def functie(n):
+    dif=0
+    sir = [int(n) for n in input().split(' ')]
+    maxim=max(sir)
+    minim=min(sir)
+    dif=maxim-minim
+    print(dif)
