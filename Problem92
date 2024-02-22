@@ -1,0 +1,4 @@
+#After school ended, Gigel started solving computer science problems and found the following: Given a right-angled triangle. Knowing the lengths of the triangle's sides, determine the length of the height dropped from the right angle to the hypotenuse.
+def inaltimetriunghi(c1,c2,i):
+  h=c1*c2/i
+  print(h)
