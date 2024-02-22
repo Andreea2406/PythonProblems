@@ -1,0 +1,5 @@
+def sort_words(sentence):
+    sentence = sentence.split()
+    sentence.sort()
+    for word in sentence:
+        print(word)
