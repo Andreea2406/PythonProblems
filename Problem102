@@ -1,0 +1,12 @@
+#Write a function that determines the sum of the smallest and largest digit of a number received as a parameter.
+def cifmaxmin(n):
+    cmin = n % 10
+    cmax = n % 10
+    while n // 10 > 0:
+        n //= 10
+        if n % 10 > cmax:
+            cmax = n % 10
+        if n % 10 < cmin:
+            cmin = n % 10
+    print(cmax + cmin)
+
