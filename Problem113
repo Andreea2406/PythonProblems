@@ -1,0 +1,7 @@
+if __name__ == "__main__":
+    n = int(input())
+    n = str(n)
+    t1 = n[:1]
+    t2 = n[1:2]
+    p = int(t1) * int(t2)
+    print(p)
