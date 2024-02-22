@@ -1,0 +1,12 @@
+def caps_lock(n):
+    c = 0
+    string = ""
+    for element in n:
+        if element == '#':
+            element = element.replace('#', "")
+            c = c + 1
+        if c % 2 != 0:
+            string = string + element.upper()
+        else:
+            string = string + element.lower()
+    print(string)
