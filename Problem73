@@ -1,0 +1,5 @@
+#Write a function that receives 3 numbers as parameters, displays the total result, so that the second parameter is equal to twice the first, and the third parameter is equal to 3 less than the second.
+def my_function(a,b,c):
+    b=2*a
+    c=b-3
+    print(c)
