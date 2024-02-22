@@ -1,0 +1,19 @@
+#Consider a word formed from at least two and at most 100 characters, only lowercase letters of the English alphabet. Write a program that reads from the keyboard a word of the specified type and displays on the screen the message YES if the word contains only consonants and, possibly, the vowel i, or the message NO otherwise.
+cuvant = input()
+
+sir_nou = ""
+vocale = ["a", "e", "i", "o", "u"]
+contor = 0
+max = -1
+ok=0
+for litera in cuvant:
+    if litera not in vocale:
+        contor+=1
+        ok=1
+    if litera=='i':
+        contor+=1
+if contor==len(cuvant) and ok==1:
+
+    print('DA')
+else:
+    print('NU')
