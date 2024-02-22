@@ -1,0 +1,3 @@
+#Write a function to calculate the minimum of the 3 numbers read from the keyboard.
+def minim(*args):
+    print(min(*args))
