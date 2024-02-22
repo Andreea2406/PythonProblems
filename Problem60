@@ -1,0 +1,8 @@
+#Given a string of characters representing a sentence formed from lowercase letters of the English alphabet and spaces. Determine the number of pairs of consecutive vowels in the sentence.
+sir=input()
+contor=0
+vocale='AEIOUaeiou'
+for i in range(len(sir)-1):
+   if sir[i] in vocale and sir[i+1] in vocale:
+      contor+=1
+print(contor)
