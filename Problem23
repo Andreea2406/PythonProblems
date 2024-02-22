@@ -1,0 +1,4 @@
+#Write a function named ma that has as parameters three grades of a student (1<=grade1, grade2, grade3<=10) and returns their arithmetic mean as an integer.
+def ma(nota1, nota2, nota3):
+    media_aritmetica= (nota1 + nota2 + nota3) // 3
+    return media_aritmetica
