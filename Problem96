@@ -1,0 +1,6 @@
+#In a yard, there are dogs, cats, and chickens. It is known that the number of cats is equal to double the number of dogs, and the number of chickens is equal to double the number of cats. If there are C dogs in the yard, how many animals are in the yard?
+def animale(c):
+    p=2*c
+    g=2*p
+    s=p+c+g
+    print(s)
