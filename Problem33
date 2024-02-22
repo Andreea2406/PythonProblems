@@ -1,0 +1,15 @@
+#Calculate the minimum of 3 numbers.
+x=int(input('Se dau numerele'))
+y=int(input('Se dau numerele'))
+z=int(input('Se dau numerele'))
+minim=0
+def minim3():
+    minim=x
+    if y<minim:
+        minim=y
+    if z<minim:
+        minim=z
+    print(minim)
+
+minim3()
+
