@@ -1,0 +1,10 @@
+#Given a string of at most 20 characters containing only lowercase letters of the English alphabet. Display the string obtained by removing each vowel from the string.
+sir=input()
+contor=0
+vocale='AEIOUaeiou'
+sir_nou=""
+for i in range(len(sir)):
+   if sir[i] not in  vocale :
+      sir_nou+=sir[i]
+
+print(sir_nou)
