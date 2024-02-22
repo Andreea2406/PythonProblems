@@ -1,0 +1,11 @@
+#Given a string of characters representing a word. Display the list of prefixes and the list of suffixes of the given word.
+cuvant=input()
+
+
+for i in range(0,len(cuvant)):
+    if i==0:
+        print('sir='+cuvant[0:len(cuvant)-i])
+    else:
+        print(cuvant[0:len(cuvant)-i])
+for i in range(0,len(cuvant)):
+        print(cuvant[i::])
